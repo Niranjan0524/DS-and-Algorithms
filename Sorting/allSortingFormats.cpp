@@ -61,6 +61,18 @@ int main() {
     priority_queue<int> maxHeap; // max heap
     priority_queue<int, vector<int>, greater<int>> minHeap; // min heap
 
+    priority_queue<
+        pair<int,int>, 
+        vector<pair<int,int>>, 
+        function<bool(const pair<int,int>&, const pair<int,int>&)>
+    > pq(
+        [](const pair<int,int>& a, const pair<int,int>& b) {
+            if (a.first == b.first)
+                return a.second > b.second;   // ascending by second
+            return a.first < b.first;         // descending by first
+        }
+    );
+
     // 10. Using set / multiset (always sorted)
     set<int> s = {3, 1, 4}; // unique & sorted
     multiset<int> ms = {3, 1, 4, 1}; // allows duplicates & sorted
