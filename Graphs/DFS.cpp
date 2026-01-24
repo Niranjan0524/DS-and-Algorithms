@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+//for adj list:-
 void DFS(vector<vector<int>> &adj,int currNode,vector<int> &visited){
     visited[currNode]=1;
     cout<<currNode<<" ";
