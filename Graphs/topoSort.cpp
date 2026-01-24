@@ -34,7 +34,7 @@ int main(){
         }
     }
     
-    cout << "Topological Sort: ";
+
     while(!s.empty()){
         cout << s.top() << " ";
         s.pop();
