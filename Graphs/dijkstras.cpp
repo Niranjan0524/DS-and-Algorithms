@@ -4,6 +4,8 @@ using namespace std;
 // time complexity: O((V + E) log V)
 // space complexity: O(V)
 
+
+//this algo finds shortest path from source to all other nodes in a weighted graph with non-negative weights
 void dijkstra(vector<vector<pair<int, int>>> &adj, int src, vector<int> &dist) {
     int n = adj.size();
     dist[src] = 0;

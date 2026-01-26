@@ -5,7 +5,7 @@ using namespace std;
 // time complexity: O(V^3)
 // space complexity: O(V^2)
 
-
+//This algo is for all pairs shortest path in a weighted graph
 //dist matrix has initial distances between nodes (-1 if no edge else weight of edge)
 void floydWarshall(vector<vector<int>> &dist) {
     int n = dist.size();

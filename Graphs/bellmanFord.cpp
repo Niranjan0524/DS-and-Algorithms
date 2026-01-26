@@ -4,6 +4,7 @@ using namespace std;
 // time complexity: O(V*E)
 // space complexity: O(V)
 
+//This algo finds shortest path from source to all other nodes in a weighted graph which may contain negative weight edges
 // here edges are in form of { {u, v, weight} } from -to -weight
 void bellmanFord(vector<vector<vector<int>>> &edges, int src, vector<int> &dist) {
     int n = dist.size();
